@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <iostream>
+#include <pthread.h>
 #include "check.hpp"
 using namespace std;
 constexpr unsigned short SERVER_PORT = 60002;
