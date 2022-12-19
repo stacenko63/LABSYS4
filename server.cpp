@@ -17,6 +17,7 @@ void* work(void* arg) {
     int min_value = 1, max_value = 20;
     while (true) {
         if (Recv(connected_socket, buffer, sizeof(buffer), 0) == 0) {
+            cout << "Disconnected from " << connected_address << endl;
             break;
         }
         cout << connected_address << " send a message : " << buffer << endl;
